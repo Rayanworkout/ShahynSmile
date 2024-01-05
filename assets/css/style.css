@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #01AEEE;
+    --secondary-color: #acd8f5;
+    --accent-color: #8ABAAE;
+    --background-color: #F5F5F5;
+    --text-color: #0F1619;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.icon {
+    color: var(--primary-color);
+}
+
+.custom-border-bottom {
+    border-bottom: 2.5px solid var(--primary-color);
+    width: 50%;
+}
+
+.cta {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    padding: 10px;
+}
+
+.cta:hover {
+    background-color: #016b92;
+    border: none;
+    box-shadow: none;
+}
+.secondary-btn {
+    background-color: var(--secondary-color);
+    border-radius: 7px;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    border: none;
+    box-shadow: none;
+    color: var(--backgound-color);
+}
+
+
+/* Hover effect on my custom border bottom */
+.hover-effect {
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.custom-border-bottom {
+    width: 40%;
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-effect:hover .custom-border-bottom {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+
+    .custom-border-bottom {
+        width: 100% !important;
+    }
+}

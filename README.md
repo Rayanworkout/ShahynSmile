@@ -1,0 +1,1 @@
+### Nuxt3 Typescript project. SSR static website form a small company. Also available as SPA for reference
