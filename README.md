@@ -1,1 +1,1 @@
-### Nuxt3 Typescript project. SSR static website form a small company. Also available as SPA for reference
+### Nuxt3 Typescript project. SSR static website form a small company. Also available as SPA for reference at https://github.com/Rayanworkout/Blanchiment-Website
