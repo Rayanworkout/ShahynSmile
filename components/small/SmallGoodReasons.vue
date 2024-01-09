@@ -4,7 +4,7 @@ import { ref } from 'vue'
 
 const calendarHover = ref(false);
 const heartHover = ref(false);
-const bookHover = ref(false);
+const thumbUpHover = ref(false);
 
 </script>
 
@@ -27,8 +27,8 @@ const bookHover = ref(false);
                 </strong></p>
             <p>ans d'expérience</p>
         </div>
-        <div @mouseover="bookHover = true" @mouseleave="bookHover = false">
-            <i :class="{ 'bi bi-book icon': !bookHover, 'bi bi-book-fill icon': bookHover }"></i>
+        <div @mouseover="thumbUpHover = true" @mouseleave="thumbUpHover = false">
+            <i :class="{ 'bi bi-hand-thumbs-up icon': !thumbUpHover, 'bi bi-hand-thumbs-up-fill icon': thumbUpHover }"></i>
             <p class="display-6"><strong>
                     5
                 </strong></p>

@@ -13,7 +13,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                    <a class="nav-link elem active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link elem active" href="#">Accueil</a>
                     <a class="nav-link elem" href="#about">Notre Centre</a>
                     <a class="nav-link elem" href="#services">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
@@ -32,7 +32,7 @@
     font-size: 25px;
 }
 
-.nav-link elem {
+.nav-link.elem {
     font-size: larger;
 }
 

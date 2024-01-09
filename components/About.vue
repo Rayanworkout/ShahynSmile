@@ -25,9 +25,9 @@
                             vitae,
                         </p>
                         <div class="d-flex align-items-center items">
+                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
                             <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
-                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
-                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
+                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
                             <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
 
 .icon-text:hover {
     color: var(--primary-color);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

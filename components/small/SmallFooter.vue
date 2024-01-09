@@ -8,7 +8,7 @@
                 <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted elem">Services</a></li>
                 <li class="nav-item"><a href="https://calendly.com/fr" class="nav-link px-2 text-muted elem">Réserver</a></li>
             </ul>
-            <p class="text-center text-muted">&copy; 2024, Blanchiment</p>
+            <p class="text-center text-muted">&copy; 2024 Blanchiment</p>
         </footer>
     </div>
 </template>
