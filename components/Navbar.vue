@@ -25,7 +25,7 @@ const btnHovered = ref(false);
                     <a class="nav-link elem mx-3" href="#services">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
                     <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false"
-                        class="nav-link btn nav-btn rounded-pill" href="https://calendly.com/fr" target="_blank"><i
+                        class="nav-link btn nav-btn rounded-pill ms-auto mb-2" href="https://calendly.com/fr" target="_blank"><i
                         class="mx-2 icon"
                             :class="{ 'bi bi-calendar-event': !btnHovered, 'bi bi-calendar-check': btnHovered }"></i>
                         Réserver</a>
