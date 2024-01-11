@@ -1,23 +1,34 @@
 
+<script setup lang="ts">
+
+const btnHovered = ref(false);
+
+</script>
 
 
 <template>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg pt-4">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="smaller-vp">
                 <a class="contact" href="#">Blanchiment</a><br>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler white-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                    <a class="nav-link elem active" href="#">Accueil</a>
+                    <a class="nav-link elem mx-3" href="#">Accueil</a>
                     <a class="nav-link elem" href="#about">Notre Centre</a>
-                    <a class="nav-link elem" href="#services">Services</a>
+                    <a class="nav-link elem mx-3" href="#services">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
-                    <a class="nav-link btn nav-btn rounded-pill" href="https://calendly.com/fr" target="_blank">Réserver</a>
+                    <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false"
+                        class="nav-link btn nav-btn rounded-pill" href="https://calendly.com/fr" target="_blank"><i
+                        class="mx-3 icon"
+                            :class="{ 'bi bi-calendar-event': !btnHovered, 'bi bi-calendar-check': btnHovered }"></i>
+                        Réserver</a>
                 </div>
             </div>
         </div>
@@ -26,22 +37,47 @@
 
 
 <style scoped>
+
+.icon {
+    font-size: 18px;
+    color: var(--background-color);
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.white-button {
+    color: var(--background-color);
+    background-color: transparent;
+    border: 1px solid var(--background-color);
+}
+
+
 .contact {
-    color: var(--text-color);
+    color: var(--background-color);
     text-decoration: none;
     font-size: 25px;
 }
 
 .nav-link.elem {
     font-size: larger;
+    color: var(--background-color);
 }
 
 .nav-btn {
-    background-color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--background-color);
     border-radius: 7px;
     color: white;
     padding: 10px;
     margin-left: 30px;
+    width: 150px;
 }
 
 .nav-btn:hover {
@@ -51,23 +87,49 @@
     color: var(--primary-color);
 }
 
+.navbar:hover {
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar:hover .elem {
+    color: black;
+}
+
+.navbar:hover .icon {
+    color: black;
+}
+
+.navbar:hover .nav-btn {
+    color: black;
+}
+
+.navbar:hover .nav-btn {
+    border-color: black;
+}
+
+.navbar:hover .white-button {
+    color: black;
+    border-color: black;
+}
+
+.navbar:hover .contact {
+    color: black;
+}
+
 /* Starting from 1000px */
 @media (min-width: 1000px) {
     .smaller-vp {
         display: none;
     }
+
     .elem {
-        border-bottom: 2px solid transparent;
         transition: border-color 0.5s ease-in-out;
     }
 
     .elem:hover {
         color: var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
-    }
-
-    .active {
-        border-bottom: 2px solid var(--primary-color);
+        border-bottom: 2px solid black;
     }
 }
 
@@ -76,10 +138,6 @@
 
     .navbar-nav {
         text-align: right;
-    }
-
-    .cta {
-        margin-left: 0;
     }
 }
 

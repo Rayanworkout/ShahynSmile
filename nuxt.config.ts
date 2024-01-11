@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Montserrat: [500, 700],
+      Inter: [300, 500],
     },
   },
   plugins: [
