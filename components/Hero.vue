@@ -11,8 +11,8 @@
                     <p class="lead mb-4">Notre centre professionnel de blanchiment dentaire vous accueille
                         tous les jours de la semaine de 7h à 16h.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="https://calendly.com/fr" target="_blank" class="btn btn-lg rounded-pill px-4 cta">Je
-                            réserve</a>
+                        <a href="https://calendly.com/fr" target="_blank" class="btn btn-lg rounded-pill px-3 cta">Je
+                            réserve <i class="bi bi-arrow-right-short" style="vertical-align: middle;"></i></a>
                         <!-- <a type="button" class="btn secondary-btn rounded-pill btn-lg px-4" href="#contact">Contact</a> -->
                     </div>
                 </div>

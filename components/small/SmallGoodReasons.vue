@@ -6,6 +6,7 @@ const calendarHover = ref(false);
 const heartHover = ref(false);
 const thumbUpHover = ref(false);
 
+
 </script>
 
 
@@ -41,6 +42,7 @@ const thumbUpHover = ref(false);
 <style scoped>
 .icon {
     font-size: 50px;
+    color: var(--background-color);
 }
 
 .counter:hover {

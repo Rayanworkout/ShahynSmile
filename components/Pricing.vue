@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta">Réserver</a>
+                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta">Réserver</a>
+                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta">Réserver</a>
+                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -123,4 +123,16 @@
 .custom-border-bottom {
     width: 30%;
 }
+
+.cta {
+    color: black;
+    border: 1px solid black;
+}
+
+.cta:hover {
+    background-color: black;
+    color: white;
+}
+
+
 </style>

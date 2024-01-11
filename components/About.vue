@@ -39,6 +39,10 @@
 
 <style scoped>
 
+h1 {
+    color: black
+}
+
 .about-pic {
     border-radius: 15px;
 }
@@ -47,7 +51,7 @@
 .icon {
     font-size: 30px;
     margin-right: 5px;
-    color: var(--primary-color);
+    color: black;
 }
 
 .icon-text {
@@ -58,8 +62,7 @@
 }
 
 .icon-text:hover {
-    color: var(--primary-color);
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 @media (max-width: 768px) {

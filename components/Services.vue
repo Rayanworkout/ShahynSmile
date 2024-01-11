@@ -25,15 +25,14 @@
         <div>
             <div class="d-flex justify-content-around align-items-center flex-column py-4">
                 <div class="text-center">
-                    <img src="../assets/img/s5.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Examination dentaire</p>
+                    <i class="bi bi-arrow-down-square icon"></i>
                 </div>
                 <div class="text-center">
-                    <img src="../assets/img/s2.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Détection de pathologies</p>
+                    <i class="bi bi-arrow-down-square icon"></i>
                 </div>
                 <div class="text-center">
-                    <img src="../assets/img/s3.png.webp" alt="logo loupe sur dent">
                     <p class="mt-1">Blanchiment Dentaire</p>
                 </div>
 
@@ -57,8 +56,8 @@
 }
 
 .services-small {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: black;
 }
 
 img {

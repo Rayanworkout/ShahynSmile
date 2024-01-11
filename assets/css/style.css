@@ -15,25 +15,26 @@ body {
 }
 
 .icon {
-    color: var(--primary-color);
+    font-size: 1.6rem;
 }
 
 .custom-border-bottom {
-    border-bottom: 2.5px solid var(--primary-color);
+    border-bottom: 2.5px solid black;
     width: 50%;
 }
 
 .cta {
-    background-color: var(--primary-color);
-    border-radius: 7px;
+    
+    background-color: transparent;
+    border: 1px solid var(--background-color);
     color: white;
     padding: 10px;
 }
 
 .cta:hover {
-    background-color: #016b92;
-    border: none;
-    box-shadow: none;
+    background-color: var(--background-color);
+    color: black;
+
 }
 .secondary-btn {
     background-color: var(--secondary-color);
@@ -52,7 +53,7 @@ body {
 
 /* Hover effect on my custom border bottom */
 .hover-effect {
-    color: var(--primary-color);
+    color: black;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
 }
