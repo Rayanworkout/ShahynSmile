@@ -4,6 +4,7 @@
     --accent-color: #8ABAAE;
     --background-color: #F5F5F5;
     --text-color: #0F1619;
+    --grey-color: #a8a9ad;
 }
 
 body {
@@ -24,18 +25,20 @@ body {
 }
 
 .cta {
-    
     background-color: transparent;
-    border: 1px solid var(--background-color);
-    color: white;
+    border: 1px solid black;
+    color: black;
     padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 .cta:hover {
-    background-color: var(--background-color);
+    border: 1px solid var(--grey-color);
+    background-color: var(--grey-color);
     color: black;
 
 }
+
 .secondary-btn {
     background-color: var(--secondary-color);
     border-radius: 7px;

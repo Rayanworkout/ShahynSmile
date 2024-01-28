@@ -11,24 +11,32 @@
                     </div>
                     <div class="col-md-6">
                         <div class="text-center mb-3 hover-effect">
-                            <h1 class="mt-3">Notre Centre</h1>
+                            <h1 class="mt-3">À Savoir</h1>
                             <div class="custom-border-bottom mx-auto mb-3"></div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus
-                            tortor,
-                            dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-                            ligula
-                            massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie,
-                            enim
-                            est
-                            eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque
-                            vitae,
+                        <p><strong>Le blanchiment dentaire est une pratique simple, sans danger pour l'émail et efficace qui
+                                permet
+                                d'éclaircir les dents grâce à l'application d'un gel à base de peroxyde
+                                d'hydrogène.</strong>
                         </p>
+                        <p>Cet ingrédient actif se décompose, pénètre dans l'émail et blanchit les parties brunes. Seuls
+                            l'émail et la dentine deviennent
+                            plus clairs.
+                        </p>
+                        <p>Les <strong>PLOMBAGES</strong>, <strong>COURONNES</strong> et <strong>DENTIERS</strong> ne sont
+                            donc pas blanchis, mais peuvent être
+                            remplacés après le blanchiment chez le dentiste pour se fondre à la nouvelle teinte de vos
+                            dents.</p>
+                        <p><strong><i>Le sourire peut parfois conduire à un complexe, c'est pourquoi Shahyn Smile s'investit
+                                    pour vous
+                                    rendre la vie facile au quotidien.</i></strong></p>
                         <div class="d-flex align-items-center items">
-                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
-                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
-                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
-                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Matériel Récent</p>
+                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Matériel professionnel récent
+                            </p>
+                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Produits professionnels sans danger
+                            </p>
+                            <p class="icon-text mx-3"><i class="bi bi-check2-circle icon"></i> Des tarifs abordables</p>
+                            <p class="icon-text"><i class="bi bi-check2-circle icon"></i> Suivi après blanchiment</p>
                         </div>
                     </div>
                 </div>
@@ -38,7 +46,6 @@
 </template>
 
 <style scoped>
-
 h1 {
     color: black
 }

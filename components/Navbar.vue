@@ -10,7 +10,7 @@ const btnHovered = ref(false);
     <nav class="navbar navbar-expand-lg pt-4">
         <div class="container-fluid d-flex align-items-center justify-content-between">
             <div class="smaller-vp">
-                <a class="contact" href="#">Blanchiment</a><br>
+                <a class="contact" href="#">Shahyn Smile</a><br>
             </div>
             <button class="navbar-toggler white-button" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -22,7 +22,7 @@ const btnHovered = ref(false);
                 <div class="navbar-nav mx-auto">
                     <a class="nav-link elem mx-3" href="#">Accueil</a>
                     <a class="nav-link elem" href="#about">Notre Centre</a>
-                    <a class="nav-link elem mx-3" href="#services">Services</a>
+                    <a class="nav-link elem mx-3" href="#pricing">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
                     <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false"
                         class="nav-link btn nav-btn rounded-pill ms-auto mb-2" href="https://calendly.com/fr" target="_blank"><i
@@ -47,34 +47,35 @@ const btnHovered = ref(false);
     top: 0;
     left: 0;
     right: 0;
+    border-bottom: 1px solid var(--text-color);
     background-color: transparent;
     z-index: 2;
     transition: background-color 0.3s ease-in-out;
 }
 
 .white-button {
-    color: var(--background-color);
+    color: var(--text-color);
     background-color: transparent;
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--text-color);
 }
 
 
 .contact {
-    color: var(--background-color);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 25px;
 }
 
 .nav-link.elem {
     font-size: larger;
-    color: var(--background-color);
+    color: var(--text-color);
 }
 
 .nav-btn {
     background-color: transparent;
-    border: 1px solid var(--background-color);
+    border: 1px solid var(--text-color);
     border-radius: 7px;
-    color: white;
+    color: var(--text-color);
     padding: 10px;
     margin-left: 30px;
     width: 150px;
@@ -87,9 +88,13 @@ const btnHovered = ref(false);
     color: var(--primary-color);
 }
 
+.icon {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
 .navbar:hover {
     background-color: var(--background-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .navbar:hover .elem {

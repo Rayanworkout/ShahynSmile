@@ -5,9 +5,6 @@
     <div>
         <Navbar />
         <div class="hero-section">
-            <div class="text-center">
-                <img src="../assets/img/logo-cropped.jpg" alt="">
-            </div>
             <div class="px-4 py-3 my-3 text-center">
                 <h1 class="display-5 fw-bold">Shahyn Smile, spécialiste du blanchiment dentaire.</h1>
                 <div class="col-lg-6 mx-auto">
@@ -26,13 +23,26 @@
 
 <style scoped>
 .hero-section {
-    padding: 100px 0;
+    /* Creating an overlay */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('../assets/img/logo.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    padding: 200px 0;
+    color: #fff;
+    width: 100%;
 }
 
-
 @media (max-width: 768px) {
-   img {
-    width: 90%;
-   }
+    .cta {
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        /* Creating an overlay */
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('../assets/img/logo.jpg');
+        background-size: cover;
+        background-position: top;
+    }
+
 }
 </style>

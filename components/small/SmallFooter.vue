@@ -6,9 +6,10 @@
             <ul class="nav justify-content-center border-bottom pb-1 mb-1">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted elem">Accueil</a></li>
                 <li class="nav-item"><a href="#services" class="nav-link px-2 text-muted elem">Services</a></li>
-                <li class="nav-item"><a href="https://calendly.com/fr" class="nav-link px-2 text-muted elem">Réserver</a></li>
+                <li class="nav-item"><a href="https://calendly.com/fr" class="nav-link px-2 text-muted elem">Réserver</a>
+                </li>
             </ul>
-            <p class="text-center text-muted">&copy; 2024 Blanchiment</p>
+            <p class="text-center text-muted">&copy; 2024 Shahyn Smile</p>
         </footer>
     </div>
 </template>

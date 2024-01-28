@@ -1,8 +1,8 @@
 <template>
     <Hero />
     <About />
-    <Services />
+    <BeforeAfter />
     <Pricing />
-    <!-- <ContactForm /> -->
+    <BeforeAfter2 />
     <Infos />
 </template>
