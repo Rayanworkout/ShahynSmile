@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       Inter: [300, 500],
     },
   },
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/public/favicon.ico' }],
   plugins: [
     { src: '~/plugins/bootstrap.js', mode: 'client' },
   ]
