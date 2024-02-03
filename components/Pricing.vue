@@ -27,7 +27,8 @@
                                 aux USA.
                             </p>
                             <p class="text-center">Il a une durée de 2 ans.</p>
-                            <p class="text-center">Il apportera une touche d'éclat à votre sourire dès la première séance.</p>
+                            <p class="text-center">Il apportera une touche d'éclat à votre sourire dès la première séance.
+                            </p>
                         </div>
                         <div class="pricing-body">
                             <div class="pricing-list text-center">
@@ -36,7 +37,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
+                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -60,7 +61,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
+                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +84,7 @@
                             </div>
                         </div>
                         <div class="pricing-footer text-center">
-                            <a href="https://calendly.com/fr" target="_blank" class="btn cta rounded-pill px-4">Réserver</a>
+                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>

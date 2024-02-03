@@ -15,7 +15,7 @@
                         besoins et aux attentes de
                         chacun d'entre vous.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="https://calendly.com/fr" target="_blank" class="btn btn-lg rounded-pill px-3 cta">Je
+                        <a href="tel:+33628944165" class="btn btn-lg rounded-pill px-3 cta">Je
                             réserve <i class="bi bi-arrow-right-short" style="vertical-align: middle;"></i></a>
                     </div>
                 </div>
@@ -31,8 +31,8 @@
 
 
 @media (max-width: 768px) {
-   img {
-    width: 90%;
-   }
+    img {
+        width: 90%;
+    }
 }
 </style>

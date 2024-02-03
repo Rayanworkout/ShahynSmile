@@ -21,11 +21,11 @@ const btnHovered = ref(false);
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
                     <a class="nav-link elem mx-3" href="#">Accueil</a>
-                    <a class="nav-link elem" href="#about">Notre Centre</a>
+                    <a class="nav-link elem" href="#about">Notre Équipe</a>
                     <a class="nav-link elem mx-3" href="#pricing">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
                     <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false"
-                        class="nav-link btn nav-btn rounded-pill ms-auto mb-2" href="https://calendly.com/fr" target="_blank"><i
+                        class="nav-link btn nav-btn rounded-pill ms-auto mb-2" href="tel:+33628944165"><i
                         class="mx-2 icon"
                             :class="{ 'bi bi-calendar-event': !btnHovered, 'bi bi-calendar-check': btnHovered }"></i>
                         Réserver</a>
