@@ -1,8 +1,22 @@
+<script setup>
+
+const showPopup = ref(false);
+
+</script>
+
 
 
 <template>
     <div class="py-5" id="pricing">
         <div class="container">
+            <transition name="fade">
+                <div class="popup" v-if="showPopup" @click.self="showPopup = false">
+                    <div class="popup-content">
+                        <h2>Une question ? Besoin d'un rdv ?</h2>
+                        <p>Contactez nous au <a href="tel:+33628944165">06.28.94.41.65</a></p>
+                    </div>
+                </div>
+            </transition>
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center mb-3 hover-effect">
@@ -36,8 +50,8 @@
                                 <p><strong>2 séances: 100€</strong></p>
                             </div>
                         </div>
-                        <div class="pricing-footer text-center">
-                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
+                        <div class="pricing-footer text-center" @click="showPopup = true">
+                            <a class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -60,8 +74,8 @@
                                 <p><strong>2 séances: 160€</strong></p>
                             </div>
                         </div>
-                        <div class="pricing-footer text-center">
-                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
+                        <div class="pricing-footer text-center" @click="showPopup = true">
+                            <a class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -83,8 +97,8 @@
                                 <p><strong>2 séances: 180€</strong></p>
                             </div>
                         </div>
-                        <div class="pricing-footer text-center">
-                            <a href="tel:+33628944165" class="btn cta rounded-pill px-4">Réserver</a>
+                        <div class="pricing-footer text-center" @click="showPopup = true">
+                            <a class="btn cta rounded-pill px-4">Réserver</a>
                         </div>
                     </div>
                 </div>
@@ -128,5 +142,34 @@ ul {
 .cta:hover {
     background-color: black;
     color: white;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 </style>

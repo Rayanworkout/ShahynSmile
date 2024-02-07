@@ -3,6 +3,12 @@
 
 const btnHovered = ref(false);
 
+const emit = defineEmits(['showPopup']);
+
+const showPopupEvent = () => {
+    emit('showPopup');
+}
+
 </script>
 
 
@@ -24,9 +30,8 @@ const btnHovered = ref(false);
                     <a class="nav-link elem" href="#about">Notre Équipe</a>
                     <a class="nav-link elem mx-3" href="#pricing">Services</a>
                     <!-- <a class="nav-link elem" href="#contact">Contact</a> -->
-                    <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false"
-                        class="nav-link btn nav-btn rounded-pill ms-auto mb-2" href="tel:+33628944165"><i
-                        class="mx-2 icon"
+                    <a @mouseover="btnHovered = true" @mouseleave="btnHovered = false" @click="showPopupEvent"
+                        class="nav-link btn nav-btn rounded-pill ms-auto mb-2"><i class="mx-2 icon"
                             :class="{ 'bi bi-calendar-event': !btnHovered, 'bi bi-calendar-check': btnHovered }"></i>
                         Réserver</a>
                 </div>
@@ -37,11 +42,11 @@ const btnHovered = ref(false);
 
 
 <style scoped>
-
 .icon {
     font-size: 18px;
     color: var(--background-color);
 }
+
 .navbar {
     position: absolute;
     top: 0;

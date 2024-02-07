@@ -1,9 +1,13 @@
+<script setup>
 
+const showPopup = ref(false);
+
+</script>
 
 
 <template>
     <div>
-        <Navbar />
+        <Navbar @show-popup="showPopup = true" />
         <div class="hero-section">
             <div class="text-center">
                 <img src="../assets/img/logo-cropped.jpg" alt="">
@@ -14,8 +18,16 @@
                     <p class="lead mb-4">Notre centre professionnel propose différents blanchiments pour répondre aux
                         besoins et aux attentes de
                         chacun d'entre vous.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <a href="tel:+33628944165" class="btn btn-lg rounded-pill px-3 cta">Je
+                    <transition name="fade">
+                        <div class="popup" v-if="showPopup" @click.self="showPopup = false">
+                            <div class="popup-content">
+                                <h2>Une question ? Besoin d'un rdv ?</h2>
+                                <p>Contactez nous au <a href="tel:+33628944165">06.28.94.41.65</a></p>
+                            </div>
+                        </div>
+                    </transition>
+                    <div @click="showPopup = true" class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-lg rounded-pill px-3 cta">Je
                             réserve <i class="bi bi-arrow-right-short" style="vertical-align: middle;"></i></a>
                     </div>
                 </div>
@@ -27,6 +39,34 @@
 <style scoped>
 .hero-section {
     padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 

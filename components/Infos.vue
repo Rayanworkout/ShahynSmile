@@ -21,7 +21,7 @@
                 <ul class="contact">
                     <li><a href="https://maps.app.goo.gl/vuQX2zN4fDbHBVK68" target="_blank"><span><i
                                     class="bi bi-geo-alt icon"></i></span> Marseille 13014</a></li>
-                    <li><span><i class="bi bi-telephone icon"></i></span> 06 28 94 41 65</li>
+                    <li><a href="tel:+33628944165"><span><i class="bi bi-telephone icon"></i></span> 06 28 94 41 65</a></li>
                     <li><span><i class="bi bi-snapchat icon"></i></span> Shahynsmile</li>
                     <li><span><i class="bi bi-tiktok icon"></i></span> shahyn_smile</li>
                     <li><a href="https://www.instagram.com/shahyn_smile?igsh=MTV1YXVyYjloYW9qZQ%3D%3D&utm_source=qr"
